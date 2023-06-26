@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopQuiz - Cadastro de Jogo</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+    <a href="inicial.html"><img class="logo" src="img/logo popquiz.png"></a> 
+        <nav>
+            <ul class="menu">
+                <li> <a href="login-adm.html">Criar Quiz <i class="fa fa-cog"></i></a></li>
+                <li> <a href="jogar.html">Jogar Quiz <i class="fa fa-play"></i></a></li>
+                <li> <a href="perfilcadastro.html"></i>Perfil <i class="fa fa-user" aria-hidden="true"></i> </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Navegação-->
+    <main>
+        <img class="logo2" src="img/logo popquiz.png" alt=""><br>
+        <div>
+            <input type="text" placeholder="Digite uma pergunta" id="exibirPergunta">
+
+            <h3>Adicione uma imagem para sua questão</h3> <input type="text" id="linkImagem"
+                placeholder="Coloque a imagem" onkeyup="exibirImg()"> <br><br>
+            <img src="" id="imagem">
+        </div>
+
+        <div>
+            <input type="text" placeholder="Digite uma resposta" id="resposta1">
+            <input type="text" placeholder="Digite uma resposta" id="resposta2">
+        </div>
+
+        <div>
+            <input type="text" placeholder="Digite uma resposta" id="resposta3">
+            <input type="text" placeholder="Digite uma resposta" id="resposta4">
+        </div>
+
+
+        <h3>Selecione qual deve ser a resposta correta</h3>
+
+        <div>
+            <select name="select" id="correta">
+                <option value="1">Resposta 1</option>
+                <option value="2">Resposta 2</option>
+                <option value="3">Resposta 3</option>
+                <option value="4">Resposta 4</option>
+            </select>
+        </div>
+
+        <div>
+            <button onclick="enviar()"> <a href="#"> Enviar</a></button>
+        </div>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p class="final"> | @2023 PopQuiz company. Todos o direitos reservados |</p>
+    </footer>
+
+</body>
+<script src="cadastro.js"></script>
+
+</html>

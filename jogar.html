@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Quiz - Jogar</title>
+    <link rel="stylesheet" href="css/jogar.css">
+
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body onload="carregarJogador()">
+    <header class="cabecalho">
+        <a href="inicial.html"><img class="logo" src="img/logo popquiz.png"></a>
+        <nav>
+            <ul class="menu">
+                <li> <a href="login-adm.html">Criar Quiz <i class="fa fa-cog"></i></a></li>
+                <li> <a href="jogar.html">Jogar Quiz <i class="fa fa-play"></i></a></li>
+                <li> <a href="perfilcadastro.html"></i>Perfil <i class="fa fa-user" aria-hidden="true"></i> </a></li>
+        </nav>
+    </header>
+
+    <main>
+        <div id="iniciar">
+            <h3>Jogador</h3>
+            <h4 id="Jogando"></h4>
+            <button onclick="IniciarJogo()">Iniciar</button>
+        </div>
+
+        <div id="iniciado">
+            <h3 class="exibe" id="exibirPergunta"></h3>
+            <h4 id="pontos"></h4>
+
+            <img src="" alt="" id="imagem">
+
+            <div class="botao-1e2">
+                <button id="resposta1" onclick="resposta('1')"></button>
+                <button id="resposta2" onclick="resposta('2')"></button>
+            </div>
+
+            <div class="botao-3e4">
+                <button id="resposta3" onclick="resposta('3')"></button>
+                <button id="resposta4" onclick="resposta('4')"></button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="final"> | @2023 PopQuiz company. Todos o direitos reservados |</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </footer>
+</body>
+<script src="jogar.js"></script>
+<script src="perfilcadastro.js"></script>
+
+</html>

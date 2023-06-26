@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopQuiz - Login Usuário</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<style>
+    img {
+        width: 200px;
+        border: 1px solid white;
+        border-radius: 10px;
+        box-shadow: 2px 4px 6px black;
+        margin: auto;
+        display: block;
+    }
+</style>
+
+<body>
+
+    <header class="cabecalho">
+        <a href="inicial.html"><img class="logo" src="img/logo popquiz.png"></a>
+        <nav>
+            <ul class="menu">
+                <li> <a href="login-adm.html">Criar Quiz <i class="fa fa-cog"></i></a></li>
+                <li> <a href="jogar.html">Jogar Quiz <i class="fa fa-play"></i></a></li>
+                <li> <a href="perfilcadastro.html"></i>Perfil <i class="fa fa-user" aria-hidden="true"></i> </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Cadastro de Usuário</h2>
+
+        <img src="img/logo popquiz.png" alt=""><br><br> <br><br>
+        <div>
+            <label> <input type="login" placeholder="Usuário" id="login">
+        </div> <!--Div User-->
+        </label>
+
+        <div>
+            <label> <input type="password" placeholder="Senha" id="senha">
+        </div><!--Div Senha-->
+
+        <div> <button onclick="entrar()"> <a href="#"></a>Entrar</button></div> <br><br><br>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p class="final"> | @2023 PopQuiz company. Todos o direitos reservados |</p>
+    </footer>
+</body>
+<script src="login.js"></script>
+</html>
